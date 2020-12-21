@@ -674,6 +674,8 @@ font styles are inherited from .page and .h3  */
   background-color: var(--accent-text-color);
 }
 
+/*SUBSCRIBE-FORM*/
+
 .subscribe-title {
   display: block;
   margin-bottom: 20px;
@@ -693,7 +695,7 @@ font styles are inherited from .page and .h3  */
   display: flex;
 }
 
-.subscribe-input {
+.subscribe-form input {
   width: 358px;
   margin-right: 12px;
   padding-top: 15px;
@@ -708,15 +710,24 @@ font styles are inherited from .page and .h3  */
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
+.subscribe-form input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .submit-button {
-  display: block;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -741,13 +752,11 @@ font styles are inherited from .page and .h3  */
     background-color 250ms var(--timing-function);
 }
 
-.button-order:hover,
-.button-order:focus {
-  background-color: var(--accent-text-color);
-}
-
 .subscribe-icon {
   display: block;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--main-white);
 }
 
 /*СТРАНИЦА "ПОРТФОЛИО"
