@@ -398,14 +398,18 @@ header {
   transition: border-color 250ms var(--timing-function);
 }
 
+.form-textarea {
+  resize: none;
+}
+
 .form-input:focus,
 .form-textarea:focus {
   border-color: var(--accent-text-color);
 }
 
-.form-input:hover + input-icon,
-.form-input:focus + input-icon {
-  color: var(--accent-text-color);
+.form-input:hover + .input-icon,
+.form-input:focus + .input-icon {
+  fill: var(--accent-text-color);
 }
 
 .form-field .form-textarea {
@@ -452,8 +456,7 @@ header {
 .check-icon {
   margin-right: 8px;
 
-  color: var(--main-white);
-  fill: var(--title-text-color);
+  fill: var(--main-white);
 
   border-radius: 2px;
   border: 2px solid var(--title-text-color);
