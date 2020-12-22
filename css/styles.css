@@ -344,6 +344,11 @@ header {
   cursor: pointer;
 }
 
+.close-button:hover > .close-icon,
+.close-button:focus > .close-icon {
+  fill: var(--accent-text-color);
+}
+
 .modal-title {
   display: block;
   margin-bottom: 12px;
