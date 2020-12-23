@@ -893,6 +893,10 @@ font styles are inherited from .page and .h3  */
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe-input {
+  color: var(--main-white);
+}
+
 .submit-button {
   display: flex;
   margin: 0;
